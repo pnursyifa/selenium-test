@@ -26,6 +26,7 @@ public class BrowserWindowsPage extends Alerts_Frames_WindowsPage {
             } else {
                 // driver.switchTo().window(handle); ada di switch util
                 switchToWindow(handle);
+                delay(3000);
                 System.out.println("2nd Window ID: " + handle);
             }
         }

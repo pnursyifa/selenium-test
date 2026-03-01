@@ -11,9 +11,9 @@ import static utilities.JavaScriptUtility.scrollToElementJS;
 
 public class HomePage extends BasePage {
     private By formsCard = By.xpath("//div[@id='app']//h5[text()='Forms']");
-    private By elementsCard = By.xpath("//div[@id='app']//h5[text()='Elements']");
-    private By widgetsCard = By.xpath("//div[@id='app']//h5[text()='Widgets']");
-    private By alertsFrameWindowsCard = By.xpath("//div[@id='app']//h5[contains(text(),'Alerts')]");
+    private By elementsCard = By.xpath("//div[@class='card-body']//h5[contains(text(), 'Elements')]");
+    private By widgetsCard = By.xpath("//div[@class='card-body']//h5[text()='Widgets']");
+    private By alertsFrameWindowsCard = By.xpath("//div[@class='card-body']//h5[contains(text(), 'Alerts')]");
 
     public FormsPage goToForms() {
         scrollToElementJS(formsCard);
