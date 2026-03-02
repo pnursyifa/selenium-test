@@ -13,5 +13,9 @@ public class ActionsUtility extends Utility {
         act().dragAndDropBy(source, x, y).perform();
     }
 
+    public static void sendKeys(WebElement source, String keys) {
+        act().sendKeys(source, keys).perform();
+    }
+
 
 }
